@@ -95,25 +95,8 @@ ZenRX providing:
 
 ```
 ./zenrx -c zenrx.json
-```
+``
 
----
-
-# Build from Source
-
-## Linux
-
-```
-sudo apt install build-essential cmake
-./build_zenrx_linux.sh
-```
-
-## Windows (cross-compile from Linux)
-
-```
-sudo apt install build-essential cmake mingw-w64
-./build_zenrx_win.sh
-```
 
 ---
 
