@@ -1,19 +1,16 @@
 # ZenRX
 
-**ZenRX** is a high-performance, CPU-only miner for RandomX-based cryptocurrencies.
-
-It is the official mining engine of the **ZenOS platform** (https://zenplatform.dev), designed for tight OS-level integration, automated deployment, and simplified large-scale management.
+**ZenRX** is a high-performance, CPU-only miner for RandomX-based cryptocurrencies (zei available)
 
 ZenRX can also be used as a fully standalone miner on Linux and Windows.
 
-Performance is comparable to XMRig for supported algorithms.  
-It is **not inherently faster or slower than XMRig** — the focus is architectural simplification and platform integration rather than raw performance changes.
+Dev fee - 0%
 
 ---
 
 # Platform Integration
 
-ZenRX is built specifically for the **ZenOS mining platform**, providing:
+ZenRX providing:
 
 - Seamless integration with ZenOS services
 - Native monitoring via HTTP API
@@ -21,23 +18,7 @@ ZenRX is built specifically for the **ZenOS mining platform**, providing:
 - Automated optimization at startup
 - MoneroOcean profitability-based auto-switching
 
-Although optimized for ZenOS, ZenRX runs perfectly as a standalone CPU miner.
-
----
-
-# Acknowledgments & Attribution
-
-ZenRX is derived from **XMRig**, https://github.com/xmrig
-
-XMRig Donations XMR: 48edfHu7V9Z84YzzMa6fUueoELZ9ZRXq9VetWzYGzKt52XU5xvqgzYnDK9URnRoJMk1j8nLwEVsaSWJ4fhdUyZijBGUicoD
-
-The embedded RandomX implementation and MSR tweaks originate from the XMRig codebase.
-
-This project is released under the **GNU General Public License v3.0**, consistent with the original XMRig license.
-
----
-
-# Changes Compared to XMRig
+# Changes
 
 ## Removed
 
@@ -56,6 +37,7 @@ This project is released under the **GNU General Public License v3.0**, consiste
 
 ## Added
 
+- ZeiCoin cryptocurrency
 - MoneroOcean algorithm profitability benchmarking (`algo-perf`)
 - Dual RandomX instances (user + dev) for zero-downtime dev fee switching
 - Extended RandomX variants:
@@ -69,6 +51,7 @@ This project is released under the **GNU General Public License v3.0**, consiste
 
 | Algorithm | Coin | Description |
 |-----------|------|-------------|
+| `rx/zei` | ZeiCoin (zei) | RandomX default (ZeiCoin mainnet) |
 | `rx/0` | Monero (XMR) | RandomX default (Monero mainnet) |
 | `rx/wow` | Wownero (WOW) | RandomX variant |
 | `rx/arq` | ArQmA (ARQ) | RandomX variant |
@@ -167,17 +150,10 @@ Configuration file: `zenrx.json`
 
 # Dev Fee
 
-ZenRX includes a **1% developer fee**:
-
-- 1 minute of mining to the developer wallet
-- Every 99 minutes of user mining
-- Zero-downtime switching via dual RandomX instances
+ZenRX includes a **0% developer fee**:
 
 ---
 
 # License
 
 ZenRX is licensed under the **GNU General Public License v3.0**.
-
-See the original XMRig license text here:  
-https://github.com/xmrig/xmrig/blob/master/LICENSE
