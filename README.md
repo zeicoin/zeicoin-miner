@@ -12,7 +12,6 @@ Dev fee - 0%
 
 ZenRX providing:
 
-- Seamless integration with ZenOS services
 - Native monitoring via HTTP API
 - Simplified deployment model
 - Automated optimization at startup
