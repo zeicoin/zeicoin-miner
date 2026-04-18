@@ -1,0 +1,13 @@
+prefix=/root/os/zenrx_deps/windows/libuv
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+LIBUV_STATIC=-L${libdir} -l:libuv.a   -lws2_32 -lpsapi -liphlpapi -luserenv -luser32 -ldbghelp -lole32 -lshell32
+
+Name: libuv
+Version: 1.51.0
+Description: multi-platform support library with a focus on asynchronous I/O.
+URL: http://libuv.org/
+
+Libs: -L${libdir} -luv   -lws2_32 -lpsapi -liphlpapi -luserenv -luser32 -ldbghelp -lole32 -lshell32
+Cflags: -I${includedir}

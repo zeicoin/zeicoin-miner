@@ -1,0 +1,21 @@
+{
+    "http": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 16000
+    },
+    "pools": [
+        {
+            "url": "gulf.moneroocean.stream:20128",
+            "user": "47MYbwgXPbXLDtU9mtg7nTSXzwqBP7hA86Sz6xFg9z3Z98ZGevNwVUSX7MnTWtHTPjQDcS4SstpkRYBnbD68RnuwLtZ12C9",
+            "pass": "ZenRX"
+        }
+    ],
+    "algo": null,
+    "colors": true,
+    "autosave": true,
+    "debug": false,
+    "log-file": null,
+    "print-time": 60,
+    "bench-algo-time": 20
+}
